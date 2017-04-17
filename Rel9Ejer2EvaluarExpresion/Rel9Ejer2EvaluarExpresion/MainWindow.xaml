@@ -1,0 +1,18 @@
+﻿<Window x:Class="Rel9Ejer2EvaluarExpresion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="200" Width="500">
+    <Grid>
+        <TextBox x:Name="txtboxExpresion" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="462" FontSize="20" FontFamily="Arial">
+            <TextBox.ToolTip>
+                <StackPanel>
+                    <TextBlock FontWeight="Bold">AYUDA</TextBlock>
+                    <TextBlock>Exapresión a evaluar</TextBlock>
+                    <TextBlock>Usa la coma (,) para los decimales</TextBlock>
+                </StackPanel>
+            </TextBox.ToolTip>
+        </TextBox>
+        <Button x:Name="btnCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top" Width="75" Click="btnCalcular_Click"/>
+        <TextBlock x:Name="txtblkResultado" HorizontalAlignment="Left" Margin="132,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="340" FontWeight="Bold" FontFamily="Arial"/>
+    </Grid>
+</Window>

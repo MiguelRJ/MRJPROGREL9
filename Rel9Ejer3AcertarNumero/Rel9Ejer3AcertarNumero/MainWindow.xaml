@@ -1,0 +1,15 @@
+﻿<Window x:Class="Rel9Ejer3AcertarNumero.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="300" Width="500" ResizeMode="CanMinimize" Background="#FFF0F0F0">
+    <Grid>
+        <Button x:Name="btnGenerarNum" Content="Generar Número" HorizontalAlignment="Left" Margin="50,30,0,0" VerticalAlignment="Top" Width="100" FontFamily="Arial" Click="btnGenerarNum_Click"/>
+        <CheckBox x:Name="cbxVerNum" Content="Ver Número" HorizontalAlignment="Left" Margin="200,32,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Arial" Checked="cbxVerNum_Checked" Unchecked="cbxVerNum_Unchecked"/>
+        <Label x:Name="lblAcertarNum" Content="Acierta el Número" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,100,0,0" FontSize="14" FontFamily="Arial"/>
+        <TextBox x:Name="txtbxAcertarNum" HorizontalAlignment="Left" Height="23" Margin="50,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
+        <Button x:Name="btnProbar" Content="Probar" HorizontalAlignment="Left" Margin="200,127,0,0" VerticalAlignment="Top" Width="75" Click="btnProbar_Click"/>
+        <TextBlock x:Name="txtblkFrase" HorizontalAlignment="Left" Margin="50,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="309" Height="39" FontFamily="Arial" FontSize="18" FontWeight="Bold"/>
+        <TextBlock x:Name="txtblkNum" HorizontalAlignment="Left" Margin="321,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="18"/>
+
+    </Grid>
+</Window>

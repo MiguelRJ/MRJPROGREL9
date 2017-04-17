@@ -1,0 +1,13 @@
+G:\git\Rel9Ejer2EvaluarExpresion\Rel9Ejer2EvaluarExpresion\bin\Debug\Rel9Ejer2EvaluarExpresion.exe.config
+G:\git\Rel9Ejer2EvaluarExpresion\Rel9Ejer2EvaluarExpresion\bin\Debug\Rel9Ejer2EvaluarExpresion.exe
+G:\git\Rel9Ejer2EvaluarExpresion\Rel9Ejer2EvaluarExpresion\bin\Debug\Rel9Ejer2EvaluarExpresion.pdb
+G:\git\Rel9Ejer2EvaluarExpresion\Rel9Ejer2EvaluarExpresion\obj\Debug\MainWindow.baml
+G:\git\Rel9Ejer2EvaluarExpresion\Rel9Ejer2EvaluarExpresion\obj\Debug\MainWindow.g.cs
+G:\git\Rel9Ejer2EvaluarExpresion\Rel9Ejer2EvaluarExpresion\obj\Debug\App.g.cs
+G:\git\Rel9Ejer2EvaluarExpresion\Rel9Ejer2EvaluarExpresion\obj\Debug\Rel9Ejer2EvaluarExpresion_MarkupCompile.cache
+G:\git\Rel9Ejer2EvaluarExpresion\Rel9Ejer2EvaluarExpresion\obj\Debug\Rel9Ejer2EvaluarExpresion.g.resources
+G:\git\Rel9Ejer2EvaluarExpresion\Rel9Ejer2EvaluarExpresion\obj\Debug\Rel9Ejer2EvaluarExpresion.Properties.Resources.resources
+G:\git\Rel9Ejer2EvaluarExpresion\Rel9Ejer2EvaluarExpresion\obj\Debug\Rel9Ejer2EvaluarExpresion.csproj.GenerateResource.Cache
+G:\git\Rel9Ejer2EvaluarExpresion\Rel9Ejer2EvaluarExpresion\obj\Debug\Rel9Ejer2EvaluarExpresion.exe
+G:\git\Rel9Ejer2EvaluarExpresion\Rel9Ejer2EvaluarExpresion\obj\Debug\Rel9Ejer2EvaluarExpresion.pdb
+G:\git\Rel9Ejer2EvaluarExpresion\Rel9Ejer2EvaluarExpresion\obj\Debug\Rel9Ejer2EvaluarExpresion.csprojResolveAssemblyReference.cache

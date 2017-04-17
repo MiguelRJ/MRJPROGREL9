@@ -1,0 +1,13 @@
+E:\Escritorio\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\bin\Debug\Rel9Ejer1SumaNNumeros.exe.config
+E:\Escritorio\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\bin\Debug\Rel9Ejer1SumaNNumeros.exe
+E:\Escritorio\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\bin\Debug\Rel9Ejer1SumaNNumeros.pdb
+E:\Escritorio\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumeros.csprojResolveAssemblyReference.cache
+E:\Escritorio\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\MainWindow.baml
+E:\Escritorio\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\MainWindow.g.cs
+E:\Escritorio\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\App.g.cs
+E:\Escritorio\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumeros_MarkupCompile.cache
+E:\Escritorio\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumeros.g.resources
+E:\Escritorio\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumeros.Properties.Resources.resources
+E:\Escritorio\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumeros.csproj.GenerateResource.Cache
+E:\Escritorio\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumeros.exe
+E:\Escritorio\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumeros.pdb
