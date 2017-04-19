@@ -24,103 +24,38 @@ namespace Rel9Ejer2EvaluarExpresion
 
         public MainWindow()
         {
-            try
-            {
-                InitializeComponent();
-            }
-            catch (ExpresionMalFormadaException)
-            {
-                MessageBox.Show("ERROR EN LA EXPRESION");
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("ERROR");
-            }
-            
+            InitializeComponent();
         }
 
         private void btnCalcular_Click(object sender, RoutedEventArgs e)
         {
             string expresion = string.Empty;
-            string strNumero = "";
+            string strNumero = string.Empty;
             double resultado = 0;
-            double numero = 0;
-
-            bool operacionSuma = false;
-            bool operacionResta = false;
-            bool operacionMultiplicacion = false;
-            bool operacionDivision = false;
+            double suma = 0;
+            char caracterAComprobar = ' ';
+            bool operador = false;
 
             expresion = txtboxExpresion.Text;
 
             for (int i = 0; i < expresion.Length; i++)
             {
-                if ( 0 <= expresion[i] && expresion[i] <= 9)
+                caracterAComprobar = expresion[i];
+                try
                 {
                     
                 }
+                catch (ExpresionMalFormadaException)
+                {
+                    MessageBox.Show("ERROR EN LA EXPRESION");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("ERROR");
+                }
             }
-
+            
             txtblkResultado.Text = resultado.ToString();
-        }
-
-        private void SwitchCalcular(char caracterAComprobar)
-        {
-            double suma = 0;
-            string strNumero = "";
-            bool operador = false;
-
-            switch (caracterAComprobar)
-            {
-                case '0':
-                case '1':
-                case '2':
-                case '3':
-                case '4':
-                case '5':
-                case '6':
-                case '7':
-                case '8':
-                case '9':
-                case ',':
-                    strNumero += caracterAComprobar.ToString();
-                    operador = false;
-                    break;
-                case '+':
-                    if (operador)
-                    {
-                        throw new ExpresionMalFormadaException();
-                    }
-                    operador = true;
-                    suma += double.Parse(strNumero);
-                    break;
-                case '-':
-                    if (operador)
-                    {
-                        throw new ExpresionMalFormadaException();
-                    }
-                    operador = true;
-                    suma -= double.Parse(strNumero);
-                    break;
-                case '*':
-                    if (operador)
-                    {
-                        throw new ExpresionMalFormadaException();
-                    }
-                    operador = true;
-                    suma *= double.Parse(strNumero);
-                    break;
-                case '/':
-                    if (operador)
-                    {
-                        throw new ExpresionMalFormadaException();
-                    }
-                    operador = true;
-                    suma /= double.Parse(strNumero);
-                    break;
-                default:
-                    break;
-            }
         }
     }
 }

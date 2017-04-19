@@ -1,0 +1,227 @@
+﻿<Window x:Class="Rel9Ejer27Sudoku.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="350">
+    <Window.Resources>
+        <SolidColorBrush x:Key="RedGridLine" Color="#FFFF4444" />
+        <SolidColorBrush x:Key="BlueGridLine" Color="#554444FF"/>
+    </Window.Resources>
+    <Grid x:Name="GridPrincipal" Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="GridSudoku" Grid.Row="1" Width="325">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="GridSudokuCelda00" Grid.Row="0" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="C00tb00" Grid.Row="0" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0" BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C00tb01" Grid.Row="0" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0" BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C00tb02" Grid.Row="0" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0" BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C00tb10" Grid.Row="1" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0" BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C00tb11" Grid.Row="1" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0" BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C00tb12" Grid.Row="1" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0" BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C00tb20" Grid.Row="2" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0" BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C00tb21" Grid.Row="2" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0" BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C00tb22" Grid.Row="2" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0" BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="3" Grid.RowSpan="3">
+                </Border>
+            </Grid>
+            <Grid x:Name="GridSudokuCelda01" Grid.Row="0" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="C01tb00" Grid.Row="0" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C01tb01" Grid.Row="0" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C01tb02" Grid.Row="0" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C01tb10" Grid.Row="1" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C01tb11" Grid.Row="1" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C01tb12" Grid.Row="1" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C01tb20" Grid.Row="2" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C01tb21" Grid.Row="2" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C01tb22" Grid.Row="2" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+            </Grid>
+            <Grid x:Name="GridSudokuCelda02" Grid.Row="0" Grid.Column="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="C02tb00" Grid.Row="0" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C02tb01" Grid.Row="0" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C02tb02" Grid.Row="0" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C02tb10" Grid.Row="1" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C02tb11" Grid.Row="1" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C02tb12" Grid.Row="1" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C02tb20" Grid.Row="2" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C02tb21" Grid.Row="2" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C02tb22" Grid.Row="2" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+            </Grid>
+            <Grid x:Name="GridSudokuCelda10" Grid.Row="1" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="C10tb00" Grid.Row="0" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C10tb01" Grid.Row="0" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C10tb02" Grid.Row="0" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C10tb10" Grid.Row="1" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C10tb11" Grid.Row="1" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C10tb12" Grid.Row="1" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C10tb20" Grid.Row="2" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C10tb21" Grid.Row="2" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C10tb22" Grid.Row="2" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+            </Grid>
+            <Grid x:Name="GridSudokuCelda11" Grid.Row="1" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="C11tb00" Grid.Row="0" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C11tb01" Grid.Row="0" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C11tb02" Grid.Row="0" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C11tb10" Grid.Row="1" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C11tb11" Grid.Row="1" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C11tb12" Grid.Row="1" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C11tb20" Grid.Row="2" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C11tb21" Grid.Row="2" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C11tb22" Grid.Row="2" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+            </Grid>
+            <Grid x:Name="GridSudokuCelda12" Grid.Row="1" Grid.Column="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="C12tb00" Grid.Row="0" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C12tb01" Grid.Row="0" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C12tb02" Grid.Row="0" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C12tb10" Grid.Row="1" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C12tb11" Grid.Row="1" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C12tb12" Grid.Row="1" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C12tb20" Grid.Row="2" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C12tb21" Grid.Row="2" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C12tb22" Grid.Row="2" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+            </Grid>
+            <Grid x:Name="GridSudokuCelda20" Grid.Row="2" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="C20tb00" Grid.Row="0" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C20tb01" Grid.Row="0" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C20tb02" Grid.Row="0" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C20tb10" Grid.Row="1" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C20tb11" Grid.Row="1" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C20tb12" Grid.Row="1" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C20tb20" Grid.Row="2" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C20tb21" Grid.Row="2" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C20tb22" Grid.Row="2" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+            </Grid>
+            <Grid x:Name="GridSudokuCelda21" Grid.Row="2" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="C21tb00" Grid.Row="0" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C21tb01" Grid.Row="0" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C21tb02" Grid.Row="0" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C21tb10" Grid.Row="1" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C21tb11" Grid.Row="1" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C21tb12" Grid.Row="1" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C21tb20" Grid.Row="2" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C21tb21" Grid.Row="2" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C21tb22" Grid.Row="2" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+            </Grid>
+            <Grid x:Name="GridSudokuCelda22" Grid.Row="2" Grid.Column="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="C22tb00" Grid.Row="0" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C22tb01" Grid.Row="0" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C22tb02" Grid.Row="0" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C22tb10" Grid.Row="1" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C22tb11" Grid.Row="1" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C22tb12" Grid.Row="1" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C22tb20" Grid.Row="2" Grid.Column="0" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C22tb21" Grid.Row="2" Grid.Column="1" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <TextBox x:Name="C22tb22" Grid.Row="2" Grid.Column="2" FontSize="20" TextAlignment="Center" Text="0"  BorderThickness="1" BorderBrush="#FFB9B9B9" SelectionBrush="#FF334FFF"/>
+                <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

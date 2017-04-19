@@ -1,0 +1,13 @@
+D:\git\Rel9Ejer27Sudoku\Rel9Ejer27Sudoku\bin\Debug\Rel9Ejer27Sudoku.exe.config
+D:\git\Rel9Ejer27Sudoku\Rel9Ejer27Sudoku\bin\Debug\Rel9Ejer27Sudoku.exe
+D:\git\Rel9Ejer27Sudoku\Rel9Ejer27Sudoku\bin\Debug\Rel9Ejer27Sudoku.pdb
+D:\git\Rel9Ejer27Sudoku\Rel9Ejer27Sudoku\obj\Debug\Rel9Ejer27Sudoku.csprojResolveAssemblyReference.cache
+D:\git\Rel9Ejer27Sudoku\Rel9Ejer27Sudoku\obj\Debug\MainWindow.baml
+D:\git\Rel9Ejer27Sudoku\Rel9Ejer27Sudoku\obj\Debug\MainWindow.g.cs
+D:\git\Rel9Ejer27Sudoku\Rel9Ejer27Sudoku\obj\Debug\App.g.cs
+D:\git\Rel9Ejer27Sudoku\Rel9Ejer27Sudoku\obj\Debug\Rel9Ejer27Sudoku_MarkupCompile.cache
+D:\git\Rel9Ejer27Sudoku\Rel9Ejer27Sudoku\obj\Debug\Rel9Ejer27Sudoku.g.resources
+D:\git\Rel9Ejer27Sudoku\Rel9Ejer27Sudoku\obj\Debug\Rel9Ejer27Sudoku.Properties.Resources.resources
+D:\git\Rel9Ejer27Sudoku\Rel9Ejer27Sudoku\obj\Debug\Rel9Ejer27Sudoku.csproj.GenerateResource.Cache
+D:\git\Rel9Ejer27Sudoku\Rel9Ejer27Sudoku\obj\Debug\Rel9Ejer27Sudoku.exe
+D:\git\Rel9Ejer27Sudoku\Rel9Ejer27Sudoku\obj\Debug\Rel9Ejer27Sudoku.pdb
