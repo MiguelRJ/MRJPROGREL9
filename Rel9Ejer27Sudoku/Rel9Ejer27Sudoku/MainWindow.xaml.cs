@@ -23,14 +23,19 @@ namespace Rel9Ejer27Sudoku
         Random rnd = new Random();
 
         #region Inicializacion de arrays
-        int[] Celda00; int[] Celda01; int[] Celda02;
-        int[] Celda10; int[] Celda11; int[] Celda12;
-        int[] Celda20; int[] Celda21; int[] Celda22;
 
+        int cont = 0;
+        List<List<int[]>> ListaCeldas;
+        List<int[]> ListaCeldas0; int[] Celda00; int[] Celda01; int[] Celda02;
+        List<int[]> ListaCeldas1; int[] Celda10; int[] Celda11; int[] Celda12;
+        List<int[]> ListaCeldas2; int[] Celda20; int[] Celda21; int[] Celda22;
+
+        List<int[]> ListaFilas;
         int[] Fila0; int[] Fila1; int[] Fila2;
         int[] Fila3; int[] Fila4; int[] Fila5;
         int[] Fila6; int[] Fila7; int[] Fila8;
 
+        List<int[]> ListaColumnas;
         int[] Columna0; int[] Columna1; int[] Columna2;
         int[] Columna3; int[] Columna4; int[] Columna5;
         int[] Columna6; int[] Columna7; int[] Columna8;
@@ -42,8 +47,8 @@ namespace Rel9Ejer27Sudoku
         {
             InitializeComponent();
             CrearCeldasIndividuales();
-            ModCeldasIndividuales();
             CrearTodosArrays();
+            //GridSudoku.Visibility = Visibility.Hidden;
         }
 
         /// <summary>
@@ -53,13 +58,66 @@ namespace Rel9Ejer27Sudoku
         {
             int numerornd;
             int finalnumerornd;
+            int numColumna;
+            int numFila;
+            string nombreCelda;
+            int primerNumCelda;
+            int segunNumCelda;
+            bool escrito;
             for (int i = 0; i < CeldasIndividuales.Length; i++)
             {
-                numerornd = rnd.Next(9);
+                numerornd = rnd.Next(1,10);
                 finalnumerornd = numerornd;
-                CeldasIndividuales[i].Text = numerornd.ToString();
+                numColumna = Grid.GetColumn(CeldasIndividuales[i]);
+                numFila = Grid.GetRow(CeldasIndividuales[i]);
+                nombreCelda = CeldasIndividuales[i].Name;
+                primerNumCelda = int.Parse(nombreCelda[1].ToString());
+                segunNumCelda = int.Parse(nombreCelda[2].ToString());
+                escrito = false;
+                while (!escrito)
+                {
+                    if (BuscarNumero(finalnumerornd, numColumna, numFila, primerNumCelda, segunNumCelda))
+                    {
+                        CeldasIndividuales[i].Text = finalnumerornd.ToString();
+                        ListaFilas[numFila][numColumna] = finalnumerornd;
+                        ListaColumnas[numColumna][numFila] = finalnumerornd;   
+                        ListaCeldas[primerNumCelda][primerNumCelda][cont] = finalnumerornd;
+                        cont++;
+                        if (cont==9)
+                        {
+                            cont = 0;
+                        }
+                        escrito = true;
+                    }
+                    else
+                    {
+                        if (finalnumerornd + 1 == 10)
+                        {
+                            finalnumerornd = 1;
+                        }
+                        else
+                        {
+                            finalnumerornd += 1;
+                        }
+                    }
+                }
                 
             }
+        }
+
+        private bool BuscarNumero(int numero, int columna, int fila, int primerNumCelda, int segunNumCelda)
+        {
+            if (!ListaFilas[fila].Contains<int>(numero))
+            {
+                if (!ListaColumnas[columna].Contains<int>(numero))
+                {
+                    if (!ListaCeldas[primerNumCelda][segunNumCelda].Contains<int>(numero))
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
 
         #region Metodos de crear Arrays
@@ -71,6 +129,55 @@ namespace Rel9Ejer27Sudoku
             CrearCeldasArrays();
             CrearFilasArrays();
             CrearColumnasArrays();
+            CrearListaFilas();
+            CrearListaColumnas();
+            CrearListaCeldas();
+        }
+
+        private void CrearListaFilas()
+        {
+            ListaFilas = new List<int[]>();
+            ListaFilas.Add(Fila0);
+            ListaFilas.Add(Fila1);
+            ListaFilas.Add(Fila2);
+            ListaFilas.Add(Fila3);
+            ListaFilas.Add(Fila4);
+            ListaFilas.Add(Fila5);
+            ListaFilas.Add(Fila6);
+            ListaFilas.Add(Fila7);
+            ListaFilas.Add(Fila8);
+        }
+        private void CrearListaColumnas()
+        {
+            ListaColumnas = new List<int[]>();
+            ListaColumnas.Add(Columna0);
+            ListaColumnas.Add(Columna1);
+            ListaColumnas.Add(Columna2);
+            ListaColumnas.Add(Columna3);
+            ListaColumnas.Add(Columna4);
+            ListaColumnas.Add(Columna5);
+            ListaColumnas.Add(Columna6);
+            ListaColumnas.Add(Columna7);
+            ListaColumnas.Add(Columna8);
+        }
+        private void CrearListaCeldas()
+        {
+            ListaCeldas = new List<List<int[]>>();
+                ListaCeldas0 = new List<int[]>();
+                    ListaCeldas0.Add(Celda00);
+                    ListaCeldas0.Add(Celda01);
+                    ListaCeldas0.Add(Celda02);
+                    ListaCeldas.Add(ListaCeldas0);
+                ListaCeldas1 = new List<int[]>();
+                    ListaCeldas1.Add(Celda10);
+                    ListaCeldas1.Add(Celda11);
+                    ListaCeldas1.Add(Celda12);
+                    ListaCeldas.Add(ListaCeldas1);
+                ListaCeldas2 = new List<int[]>();
+                    ListaCeldas2.Add(Celda20);
+                    ListaCeldas2.Add(Celda21);
+                    ListaCeldas2.Add(Celda22);
+                    ListaCeldas.Add(ListaCeldas2);
         }
 
         /// <summary>
@@ -195,7 +302,21 @@ namespace Rel9Ejer27Sudoku
                                                     C20tb00, C20tb01, C20tb02, C20tb10, C20tb11, C20tb12, C20tb20, C20tb21, C20tb22, 
                                                     C21tb00, C21tb01, C21tb02, C21tb10, C21tb11, C21tb12, C21tb20, C21tb21, C21tb22, 
                                                     C22tb00, C22tb01, C22tb02, C22tb10, C22tb11, C22tb12, C22tb20, C22tb21, C22tb22};
+            RellenarCeldasIndividuales();
+        }
+        private void RellenarCeldasIndividuales()
+        {
+            for (int i = 0; i < CeldasIndividuales.Length; i++)
+            {
+                CeldasIndividuales[i].Text = "-1";
+            }
         }
         #endregion
+
+        private void btnNuevo_Click(object sender, RoutedEventArgs e)
+        {
+            ModCeldasIndividuales();
+            //GridSudoku.Visibility = Visibility.Visible;
+        }
     }
 }

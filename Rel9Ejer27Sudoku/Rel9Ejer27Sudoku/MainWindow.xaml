@@ -223,5 +223,6 @@
                 <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
             </Grid>
         </Grid>
+        <Button x:Name="btnNuevo" Content="Nuevo" HorizontalAlignment="Left" Margin="8,58,0,0" VerticalAlignment="Top" Width="76" Click="btnNuevo_Click"/>
     </Grid>
 </Window>
