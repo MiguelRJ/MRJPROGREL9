@@ -21,6 +21,8 @@ namespace Rel9Ejer27Sudoku
     public partial class MainWindow : Window
     {
         Random rnd = new Random();
+        int Dificultad = 99;
+        int numSudoku;
 
         #region Inicializacion de arrays
 
@@ -41,6 +43,10 @@ namespace Rel9Ejer27Sudoku
         int[] Columna6; int[] Columna7; int[] Columna8;
 
         TextBox[] CeldasIndividuales;
+        int[,] SudokusArr = new int[2, 81] { 
+            {8,7,6,4,5,9,2,1,3,1,5,4,2,8,3,9,6,7,9,2,3,7,1,6,8,5,4,7,3,1,9,4,5,6,2,8,6,4,2,1,7,8,5,3,9,5,9,8,3,6,2,7,4,1,2,1,7,6,9,4,3,8,5,3,8,9,5,2,1,4,7,6,4,6,5,8,3,7,1,9,2},
+            {9,2,1,4,6,5,8,3,7,8,5,3,2,1,7,6,9,4,7,6,4,3,8,9,5,2,1,5,4,8,9,2,3,7,1,6,1,3,2,8,7,6,4,5,9,6,7,9,1,5,4,2,8,3,3,9,5,6,4,2,1,7,8,4,1,7,5,9,8,3,6,2,2,8,6,7,3,1,9,4,5}
+        };
         #endregion
 
         public MainWindow()
@@ -48,7 +54,7 @@ namespace Rel9Ejer27Sudoku
             InitializeComponent();
             CrearCeldasIndividuales();
             CrearTodosArrays();
-            //GridSudoku.Visibility = Visibility.Hidden;
+            GridSudoku.Visibility = Visibility.Hidden;
         }
 
         /// <summary>
@@ -56,68 +62,19 @@ namespace Rel9Ejer27Sudoku
         /// </summary>
         private void ModCeldasIndividuales()
         {
-            int numerornd;
-            int finalnumerornd;
-            int numColumna;
-            int numFila;
-            string nombreCelda;
-            int primerNumCelda;
-            int segunNumCelda;
-            bool escrito;
             for (int i = 0; i < CeldasIndividuales.Length; i++)
             {
-                numerornd = rnd.Next(1,10);
-                finalnumerornd = numerornd;
-                numColumna = Grid.GetColumn(CeldasIndividuales[i]);
-                numFila = Grid.GetRow(CeldasIndividuales[i]);
-                nombreCelda = CeldasIndividuales[i].Name;
-                primerNumCelda = int.Parse(nombreCelda[1].ToString());
-                segunNumCelda = int.Parse(nombreCelda[2].ToString());
-                escrito = false;
-                while (!escrito)
+                CeldasIndividuales[i].Background = new SolidColorBrush(Colors.White);
+                CeldasIndividuales[i].Text = "";
+                if (rnd.Next(0, 101) < Dificultad)
                 {
-                    if (BuscarNumero(finalnumerornd, numColumna, numFila, primerNumCelda, segunNumCelda))
-                    {
-                        CeldasIndividuales[i].Text = finalnumerornd.ToString();
-                        ListaFilas[numFila][numColumna] = finalnumerornd;
-                        ListaColumnas[numColumna][numFila] = finalnumerornd;   
-                        ListaCeldas[primerNumCelda][primerNumCelda][cont] = finalnumerornd;
-                        cont++;
-                        if (cont==9)
-                        {
-                            cont = 0;
-                        }
-                        escrito = true;
-                    }
-                    else
-                    {
-                        if (finalnumerornd + 1 == 10)
-                        {
-                            finalnumerornd = 1;
-                        }
-                        else
-                        {
-                            finalnumerornd += 1;
-                        }
-                    }
+                    CeldasIndividuales[i].Text = SudokusArr[numSudoku, i].ToString(); 
                 }
-                
-            }
-        }
-
-        private bool BuscarNumero(int numero, int columna, int fila, int primerNumCelda, int segunNumCelda)
-        {
-            if (!ListaFilas[fila].Contains<int>(numero))
-            {
-                if (!ListaColumnas[columna].Contains<int>(numero))
+                else
                 {
-                    if (!ListaCeldas[primerNumCelda][segunNumCelda].Contains<int>(numero))
-                    {
-                        return true;
-                    }
+                    CeldasIndividuales[i].Text = "";
                 }
             }
-            return false;
         }
 
         #region Metodos de crear Arrays
@@ -293,15 +250,17 @@ namespace Rel9Ejer27Sudoku
         /// </summary>
         private void CrearCeldasIndividuales()
         {
-            CeldasIndividuales = new TextBox[81] { C00tb00, C00tb01, C00tb02, C00tb10, C00tb11, C00tb12, C00tb20, C00tb21, C00tb22, 
-                                                    C01tb00, C01tb01, C01tb02, C01tb10, C01tb11, C01tb12, C01tb20, C01tb21, C01tb22, 
-                                                    C02tb00, C02tb01, C02tb02, C02tb10, C02tb11, C02tb12, C02tb20, C02tb21, C02tb22, 
-                                                    C10tb00, C10tb01, C10tb02, C10tb10, C10tb11, C10tb12, C10tb20, C10tb21, C10tb22, 
-                                                    C11tb00, C11tb01, C11tb02, C11tb10, C11tb11, C11tb12, C11tb20, C11tb21, C11tb22, 
-                                                    C12tb00, C12tb01, C12tb02, C12tb10, C12tb11, C12tb12, C12tb20, C12tb21, C12tb22, 
-                                                    C20tb00, C20tb01, C20tb02, C20tb10, C20tb11, C20tb12, C20tb20, C20tb21, C20tb22, 
-                                                    C21tb00, C21tb01, C21tb02, C21tb10, C21tb11, C21tb12, C21tb20, C21tb21, C21tb22, 
-                                                    C22tb00, C22tb01, C22tb02, C22tb10, C22tb11, C22tb12, C22tb20, C22tb21, C22tb22};
+            CeldasIndividuales = new TextBox[81] { C00tb00, C00tb01, C00tb02, C01tb00, C01tb01, C01tb02, C02tb00, C02tb01, C02tb02, 
+                                                    C00tb10, C00tb11, C00tb12, C01tb10, C01tb11, C01tb12, C02tb10, C02tb11, C02tb12,
+                                                    C00tb20, C00tb21, C00tb22, C01tb20, C01tb21, C01tb22, C02tb20, C02tb21, C02tb22, 
+
+                                                    C10tb00, C10tb01, C10tb02, C11tb00, C11tb01, C11tb02, C12tb00, C12tb01, C12tb02, 
+                                                    C10tb10, C10tb11, C10tb12, C11tb10, C11tb11, C11tb12, C12tb10, C12tb11, C12tb12, 
+                                                    C10tb20, C10tb21, C10tb22, C11tb20, C11tb21, C11tb22, C12tb20, C12tb21, C12tb22, 
+
+                                                    C20tb00, C20tb01, C20tb02, C21tb00, C21tb01, C21tb02, C22tb00, C22tb01, C22tb02, 
+                                                    C20tb10, C20tb11, C20tb12, C21tb10, C21tb11, C21tb12, C22tb10, C22tb11, C22tb12, 
+                                                    C20tb20, C20tb21, C20tb22, C21tb20, C21tb21, C21tb22, C22tb20, C22tb21, C22tb22};
             RellenarCeldasIndividuales();
         }
         private void RellenarCeldasIndividuales()
@@ -315,8 +274,108 @@ namespace Rel9Ejer27Sudoku
 
         private void btnNuevo_Click(object sender, RoutedEventArgs e)
         {
+            numSudoku = rnd.Next(0, SudokusArr.GetLength(0));
             ModCeldasIndividuales();
-            //GridSudoku.Visibility = Visibility.Visible;
+            GridSudoku.Visibility = Visibility.Visible;
+        }
+
+        private void btnComprobar_Click(object sender, RoutedEventArgs e)
+        {
+            bool vacia = false;
+            for (int i = 0; i < CeldasIndividuales.Length; i++)
+            {
+                if (CeldasIndividuales[i].Text=="")
+                {
+                    vacia = true;
+                    CeldasIndividuales[i].Background = new SolidColorBrush(Colors.Beige);
+                }
+            }
+            if (vacia)
+            {
+                MessageBox.Show("Quedan celdas vacias...");
+            }
+            else
+            {
+                for (int i = 0; i < CeldasIndividuales.Length; i++)
+                {
+                    if (CeldasIndividuales[i].Text.ToString() != SudokusArr[numSudoku,i].ToString())
+                    {
+                        MessageBox.Show("El sudoku no es correcto.");
+                        CeldasIndividuales[i].Background = new SolidColorBrush(Colors.Tomato);
+                    }
+                }
+            }
         }
     }
 }
+
+/*
+/// <summary>
+        /// Modifica todos los textbox de una vez
+        /// </summary>
+        private void ModCeldasIndividuales()
+        {
+            int numerornd;
+            int finalnumerornd;
+            int numColumna;
+            int numFila;
+            string nombreCelda;
+            int primerNumCelda;
+            int segunNumCelda;
+            bool escrito;
+            for (int i = 0; i < CeldasIndividuales.Length; i++)
+            {
+                numerornd = rnd.Next(1,10);
+                finalnumerornd = numerornd;
+                numColumna = Grid.GetColumn(CeldasIndividuales[i]);
+                numFila = Grid.GetRow(CeldasIndividuales[i]);
+                nombreCelda = CeldasIndividuales[i].Name;
+                primerNumCelda = int.Parse(nombreCelda[1].ToString());
+                segunNumCelda = int.Parse(nombreCelda[2].ToString());
+                escrito = false;
+                while (!escrito)
+                {
+                    if (BuscarNumero(finalnumerornd, numColumna, numFila, primerNumCelda, segunNumCelda))
+                    {
+                        CeldasIndividuales[i].Text = finalnumerornd.ToString();
+                        ListaFilas[numFila][numColumna] = finalnumerornd;
+                        ListaColumnas[numColumna][numFila] = finalnumerornd;   
+                        ListaCeldas[primerNumCelda][primerNumCelda][cont] = finalnumerornd;
+                        cont++;
+                        if (cont==9)
+                        {
+                            cont = 0;
+                        }
+                        escrito = true;
+                    }
+                    else
+                    {
+                        if (finalnumerornd + 1 == 10)
+                        {
+                            finalnumerornd = 1;
+                        }
+                        else
+                        {
+                            finalnumerornd += 1;
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        private bool BuscarNumero(int numero, int columna, int fila, int primerNumCelda, int segunNumCelda)
+        {
+            if (!ListaFilas[fila].Contains<int>(numero))
+            {
+                if (!ListaColumnas[columna].Contains<int>(numero))
+                {
+                    if (!ListaCeldas[primerNumCelda][segunNumCelda].Contains<int>(numero))
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        } 
+ */
