@@ -343,14 +343,17 @@ namespace Rel9Ejer27Sudoku
             if (((RadioButton)e.Source).Content.ToString() == "Facil")
             {
                 Dificultad = 70;
+                btnNuevo_Click(sender,e);
             }
             if (((RadioButton)e.Source).Content.ToString() == "Normal")
             {
                 Dificultad = 50;
+                btnNuevo_Click(sender, e);
             }
             if (((RadioButton)e.Source).Content.ToString() == "Dificil")
             {
                 Dificultad = 30;
+                btnNuevo_Click(sender, e);
             }
         }
 
