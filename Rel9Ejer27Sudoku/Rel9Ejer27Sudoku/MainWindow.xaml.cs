@@ -21,7 +21,7 @@ namespace Rel9Ejer27Sudoku
     public partial class MainWindow : Window
     {
         Random rnd = new Random();
-        int Dificultad = 99;
+        int Dificultad = 50;
         int numSudoku;
 
         #region Inicializacion de arrays
@@ -68,11 +68,13 @@ namespace Rel9Ejer27Sudoku
                 CeldasIndividuales[i].Text = "";
                 if (rnd.Next(0, 101) < Dificultad)
                 {
-                    CeldasIndividuales[i].Text = SudokusArr[numSudoku, i].ToString(); 
+                    CeldasIndividuales[i].Text = SudokusArr[numSudoku, i].ToString();
+                    CeldasIndividuales[i].Foreground = new SolidColorBrush(Colors.Black);
                 }
                 else
                 {
                     CeldasIndividuales[i].Text = "";
+                    CeldasIndividuales[i].Foreground = new SolidColorBrush(Colors.Red);
                 }
             }
         }
@@ -281,10 +283,11 @@ namespace Rel9Ejer27Sudoku
 
         private void btnComprobar_Click(object sender, RoutedEventArgs e)
         {
-            bool vacia = false;
+            bool vacia = false;// Hay alguna celda vacia? inicializado a false porque no habria ninguna vacia (el valor se cambiara si hay alguna vacia)
+            bool correcto = true;// Es correcto el sudoku? inicializado a true porque estaria bien (el valor se cambiara si hay algun valor incorrecto)
             for (int i = 0; i < CeldasIndividuales.Length; i++)
             {
-                if (CeldasIndividuales[i].Text=="")
+                if (CeldasIndividuales[i].Text == "" || CeldasIndividuales[i].Text == " ")
                 {
                     vacia = true;
                     CeldasIndividuales[i].Background = new SolidColorBrush(Colors.Beige);
@@ -292,7 +295,7 @@ namespace Rel9Ejer27Sudoku
             }
             if (vacia)
             {
-                MessageBox.Show("Quedan celdas vacias...");
+                //MessageBox.Show("Quedan celdas vacias...");
             }
             else
             {
@@ -300,82 +303,58 @@ namespace Rel9Ejer27Sudoku
                 {
                     if (CeldasIndividuales[i].Text.ToString() != SudokusArr[numSudoku,i].ToString())
                     {
-                        MessageBox.Show("El sudoku no es correcto.");
+                        correcto = false;
                         CeldasIndividuales[i].Background = new SolidColorBrush(Colors.Tomato);
                     }
                 }
+                if (correcto)
+                {
+                    MessageBox.Show("Felicidades, has completado el sudoku.");
+                }
+                else
+                {
+                    //MessageBox.Show("Hay algun error en tu sudoku");
+                }
             }
         }
+
+        private void getFocusTxtBox(object sender, RoutedEventArgs e)
+        {
+            ((TextBox)e.Source).Background = new SolidColorBrush(Colors.White);
+        }
+
+        private void GridSudoku_KeyDown(object sender, KeyEventArgs e)
+        {
+            int numeroKey = (KeyInterop.VirtualKeyFromKey(e.Key)); // Consiguo el numero de la tecla para convertirlo en char
+            //MessageBox.Show(numeroKey.ToString());
+            if (numeroKey >= (int)'1' && numeroKey <= (int)'9')// Si ese numero esta ente el numero de '1' a entero y '9' a entero 
+            {
+                //MessageBox.Show("ok");
+                ((TextBox)e.Source).Text = ((char)numeroKey).ToString();// lo escribo en el textbox
+            }
+            else
+            {
+                ((TextBox)e.Source).Text = " ";// cambio el text box a un espacio en blanco
+            }
+        }
+
+        private void StackPanel_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (((RadioButton)e.Source).Content.ToString() == "Facil")
+            {
+                Dificultad = 70;
+            }
+            if (((RadioButton)e.Source).Content.ToString() == "Normal")
+            {
+                Dificultad = 50;
+            }
+            if (((RadioButton)e.Source).Content.ToString() == "Dificil")
+            {
+                Dificultad = 30;
+            }
+        }
+
+
+
     }
 }
-
-/*
-/// <summary>
-        /// Modifica todos los textbox de una vez
-        /// </summary>
-        private void ModCeldasIndividuales()
-        {
-            int numerornd;
-            int finalnumerornd;
-            int numColumna;
-            int numFila;
-            string nombreCelda;
-            int primerNumCelda;
-            int segunNumCelda;
-            bool escrito;
-            for (int i = 0; i < CeldasIndividuales.Length; i++)
-            {
-                numerornd = rnd.Next(1,10);
-                finalnumerornd = numerornd;
-                numColumna = Grid.GetColumn(CeldasIndividuales[i]);
-                numFila = Grid.GetRow(CeldasIndividuales[i]);
-                nombreCelda = CeldasIndividuales[i].Name;
-                primerNumCelda = int.Parse(nombreCelda[1].ToString());
-                segunNumCelda = int.Parse(nombreCelda[2].ToString());
-                escrito = false;
-                while (!escrito)
-                {
-                    if (BuscarNumero(finalnumerornd, numColumna, numFila, primerNumCelda, segunNumCelda))
-                    {
-                        CeldasIndividuales[i].Text = finalnumerornd.ToString();
-                        ListaFilas[numFila][numColumna] = finalnumerornd;
-                        ListaColumnas[numColumna][numFila] = finalnumerornd;   
-                        ListaCeldas[primerNumCelda][primerNumCelda][cont] = finalnumerornd;
-                        cont++;
-                        if (cont==9)
-                        {
-                            cont = 0;
-                        }
-                        escrito = true;
-                    }
-                    else
-                    {
-                        if (finalnumerornd + 1 == 10)
-                        {
-                            finalnumerornd = 1;
-                        }
-                        else
-                        {
-                            finalnumerornd += 1;
-                        }
-                    }
-                }
-                
-            }
-        }
-
-        private bool BuscarNumero(int numero, int columna, int fila, int primerNumCelda, int segunNumCelda)
-        {
-            if (!ListaFilas[fila].Contains<int>(numero))
-            {
-                if (!ListaColumnas[columna].Contains<int>(numero))
-                {
-                    if (!ListaCeldas[primerNumCelda][segunNumCelda].Contains<int>(numero))
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
-        } 
- */
