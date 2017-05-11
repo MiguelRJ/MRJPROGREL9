@@ -3,7 +3,18 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="300" Width="500" Background="#FFFFFFC0">
     <Grid>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="* Suma de los numeros entre N1 y N2 *" VerticalAlignment="Top" Margin="60,10,60,0" FontFamily="Arial" FontWeight="Bold" FontSize="20" Foreground="#FFD24836"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" Text="* Suma de los numeros entre N1 y N2 *" VerticalAlignment="Top" Margin="10" FontFamily="Arial" FontWeight="Bold" FontSize="20" Foreground="#FFD24836"/>
+        <Label x:Name="lblResultado" Grid.Row="2" Content="" VerticalAlignment="Bottom" Background="White" Foreground="Red"/>
+        <Label Content="Numero inicial:" HorizontalAlignment="Left" Margin="62,10,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="#FF1830C5"/>
+        <Label Content="Numero final:" HorizontalAlignment="Left" Margin="70,54,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="#FF1830C5"/>
+        <TextBox x:Name="txtbxInicial" HorizontalAlignment="Left" Height="23" Margin="172,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtbxFinal" HorizontalAlignment="Left" Height="23" Margin="172,54,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Sumar" HorizontalAlignment="Left" Margin="346,28,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Height="30" Click="Button_Click"/>
 
     </Grid>
 </Window>

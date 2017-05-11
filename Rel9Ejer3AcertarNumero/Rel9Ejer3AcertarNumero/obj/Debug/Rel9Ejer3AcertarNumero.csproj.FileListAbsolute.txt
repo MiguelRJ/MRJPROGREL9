@@ -11,3 +11,6 @@ G:\git\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\Rel9Ejer3AcertarN
 G:\git\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\Rel9Ejer3AcertarNumero.csproj.GenerateResource.Cache
 G:\git\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\Rel9Ejer3AcertarNumero.exe
 G:\git\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\Rel9Ejer3AcertarNumero.pdb
+D:\git\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\bin\Debug\Rel9Ejer3AcertarNumero.exe.config
+D:\git\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\Rel9Ejer3AcertarNumero.exe
+D:\git\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\Rel9Ejer3AcertarNumero.pdb

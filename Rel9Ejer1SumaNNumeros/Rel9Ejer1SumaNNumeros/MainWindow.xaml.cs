@@ -32,12 +32,12 @@ namespace Rel9Ejer1SumaNNumeros
 
         private void btnCalcular_Click(object sender, RoutedEventArgs e)
         {
-            int numero = 0;
-            int suma = 0;
+            double numero = 0;
+            double suma = 0;
             try
             {
-                numero = int.Parse(txtboxCaja.Text);
-                for (int i = numero; i > 0; i--)
+                numero = double.Parse(txtboxCaja.Text);
+                for (double i = numero; i > 0; i--)
                 {
                     suma += numero;
                     numero--;

@@ -24,5 +24,26 @@ namespace Rel9Ejer4SumaEntreNums
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            long numInicial = 0;
+            long numFinal = 0;
+            long numSuma = 0;
+            try
+            {
+                numInicial = long.Parse(txtbxInicial.Text);
+                numFinal = long.Parse(txtbxFinal.Text);
+                for (long i = numInicial; i <= numFinal; i++)
+                {
+                    numSuma += i;
+                }
+                lblResultado.Content = "La suma desde "+numInicial+" hasta "+numFinal+" es: "+numSuma;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
