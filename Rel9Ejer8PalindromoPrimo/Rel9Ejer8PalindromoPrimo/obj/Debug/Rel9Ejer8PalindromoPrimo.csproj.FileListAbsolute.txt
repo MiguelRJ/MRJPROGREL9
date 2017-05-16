@@ -1,0 +1,13 @@
+G:\git prog rel\Rel9Ejer8PalindromoPrimo\Rel9Ejer8PalindromoPrimo\bin\Debug\Rel9Ejer8PalindromoPrimo.exe.config
+G:\git prog rel\Rel9Ejer8PalindromoPrimo\Rel9Ejer8PalindromoPrimo\bin\Debug\Rel9Ejer8PalindromoPrimo.exe
+G:\git prog rel\Rel9Ejer8PalindromoPrimo\Rel9Ejer8PalindromoPrimo\bin\Debug\Rel9Ejer8PalindromoPrimo.pdb
+G:\git prog rel\Rel9Ejer8PalindromoPrimo\Rel9Ejer8PalindromoPrimo\obj\Debug\Rel9Ejer8PalindromoPrimo.csprojResolveAssemblyReference.cache
+G:\git prog rel\Rel9Ejer8PalindromoPrimo\Rel9Ejer8PalindromoPrimo\obj\Debug\MainWindow.baml
+G:\git prog rel\Rel9Ejer8PalindromoPrimo\Rel9Ejer8PalindromoPrimo\obj\Debug\MainWindow.g.cs
+G:\git prog rel\Rel9Ejer8PalindromoPrimo\Rel9Ejer8PalindromoPrimo\obj\Debug\App.g.cs
+G:\git prog rel\Rel9Ejer8PalindromoPrimo\Rel9Ejer8PalindromoPrimo\obj\Debug\Rel9Ejer8PalindromoPrimo_MarkupCompile.cache
+G:\git prog rel\Rel9Ejer8PalindromoPrimo\Rel9Ejer8PalindromoPrimo\obj\Debug\Rel9Ejer8PalindromoPrimo.g.resources
+G:\git prog rel\Rel9Ejer8PalindromoPrimo\Rel9Ejer8PalindromoPrimo\obj\Debug\Rel9Ejer8PalindromoPrimo.Properties.Resources.resources
+G:\git prog rel\Rel9Ejer8PalindromoPrimo\Rel9Ejer8PalindromoPrimo\obj\Debug\Rel9Ejer8PalindromoPrimo.csproj.GenerateResource.Cache
+G:\git prog rel\Rel9Ejer8PalindromoPrimo\Rel9Ejer8PalindromoPrimo\obj\Debug\Rel9Ejer8PalindromoPrimo.exe
+G:\git prog rel\Rel9Ejer8PalindromoPrimo\Rel9Ejer8PalindromoPrimo\obj\Debug\Rel9Ejer8PalindromoPrimo.pdb

@@ -14,3 +14,16 @@ G:\git\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\Rel9Ejer3AcertarN
 D:\git\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\bin\Debug\Rel9Ejer3AcertarNumero.exe.config
 D:\git\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\Rel9Ejer3AcertarNumero.exe
 D:\git\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\Rel9Ejer3AcertarNumero.pdb
+G:\git prog rel\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\bin\Debug\Rel9Ejer3AcertarNumero.exe.config
+G:\git prog rel\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\Rel9Ejer3AcertarNumero.pdb
+G:\git prog rel\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\bin\Debug\Rel9Ejer3AcertarNumero.exe
+G:\git prog rel\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\bin\Debug\Rel9Ejer3AcertarNumero.pdb
+G:\git prog rel\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\Rel9Ejer3AcertarNumero.csprojResolveAssemblyReference.cache
+G:\git prog rel\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\MainWindow.baml
+G:\git prog rel\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\MainWindow.g.cs
+G:\git prog rel\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\App.g.cs
+G:\git prog rel\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\Rel9Ejer3AcertarNumero_MarkupCompile.cache
+G:\git prog rel\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\Rel9Ejer3AcertarNumero.g.resources
+G:\git prog rel\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\Rel9Ejer3AcertarNumero.Properties.Resources.resources
+G:\git prog rel\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\Rel9Ejer3AcertarNumero.csproj.GenerateResource.Cache
+G:\git prog rel\Rel9Ejer3AcertarNumero\Rel9Ejer3AcertarNumero\obj\Debug\Rel9Ejer3AcertarNumero.exe

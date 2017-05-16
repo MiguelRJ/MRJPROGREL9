@@ -23,6 +23,7 @@ namespace Rel9Ejer3AcertarNumero
         Random rnd = new Random();
         const int NUMEROMAXIMO = 100;
         int intentos = 0;
+        bool error = false;
 
         public MainWindow()
         {
@@ -56,11 +57,13 @@ namespace Rel9Ejer3AcertarNumero
             int numero = 0;
             try
             {
+                error = false;
                 numero = int.Parse(txtbxAcertarNum.Text);
             }
             catch (Exception)
             {
-                MessageBox.Show("ERROR: no has indicado un numero.");
+                txtblkFrase.Text = "ERROR: no has indicado un numero.";
+                error = true;
             }
             intentos += 1;
             if (numero == int.Parse(txtblkNum.Text.ToString()))
@@ -72,13 +75,16 @@ namespace Rel9Ejer3AcertarNumero
             }
             else
             {
-                if (numero < int.Parse(txtblkNum.Text.ToString()))
+                if (!error)
                 {
-                    txtblkFrase.Text = "NO, el numero buscado es MAYOR";
-                }
-                else
-                {
-                    txtblkFrase.Text = "NO, el numero buscado es MENOR";
+                    if (numero < int.Parse(txtblkNum.Text.ToString()))
+                    {
+                        txtblkFrase.Text = "NO, el numero buscado es MAYOR";
+                    }
+                    else
+                    {
+                        txtblkFrase.Text = "NO, el numero buscado es MENOR";
+                    }
                 }
             }
             txtbxAcertarNum.Text = "";

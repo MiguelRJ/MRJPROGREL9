@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Rel9Ejer27Sudoku.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="450" Width="350">
+        Title="Miguel Rodriguez Jimenez" Height="450" Width="350">
     <Window.Resources>
         <SolidColorBrush x:Key="RedGridLine" Color="#FFFF4444" />
         <SolidColorBrush x:Key="BlueGridLine" Color="#554444FF"/>
@@ -233,6 +233,7 @@
             <RadioButton x:Name="rdbtnDificil" Content="Dificil" HorizontalAlignment="Right"  Grid.Row="4" VerticalAlignment="Center" Margin="5" Foreground="White" GroupName="dificultad"/>
         </StackPanel>
         <TextBlock TextWrapping="Wrap" Text="SUDOKU MRJ" VerticalAlignment="Top" Margin="10" Foreground="White" FontWeight="Bold" FontSize="26" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Right" Grid.Row="3" Text="V. Alpha 0.5" VerticalAlignment="Bottom" Foreground="White"/>
 
     </Grid>
 </Window>

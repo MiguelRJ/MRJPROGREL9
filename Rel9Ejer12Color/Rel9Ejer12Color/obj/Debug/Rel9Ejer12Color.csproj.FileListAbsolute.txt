@@ -1,0 +1,13 @@
+G:\git prog rel\Rel9Ejer12Color\Rel9Ejer12Color\bin\Debug\Rel9Ejer12Color.exe.config
+G:\git prog rel\Rel9Ejer12Color\Rel9Ejer12Color\bin\Debug\Rel9Ejer12Color.exe
+G:\git prog rel\Rel9Ejer12Color\Rel9Ejer12Color\bin\Debug\Rel9Ejer12Color.pdb
+G:\git prog rel\Rel9Ejer12Color\Rel9Ejer12Color\obj\Debug\Rel9Ejer12Color.csprojResolveAssemblyReference.cache
+G:\git prog rel\Rel9Ejer12Color\Rel9Ejer12Color\obj\Debug\MainWindow.baml
+G:\git prog rel\Rel9Ejer12Color\Rel9Ejer12Color\obj\Debug\MainWindow.g.cs
+G:\git prog rel\Rel9Ejer12Color\Rel9Ejer12Color\obj\Debug\App.g.cs
+G:\git prog rel\Rel9Ejer12Color\Rel9Ejer12Color\obj\Debug\Rel9Ejer12Color_MarkupCompile.cache
+G:\git prog rel\Rel9Ejer12Color\Rel9Ejer12Color\obj\Debug\Rel9Ejer12Color.g.resources
+G:\git prog rel\Rel9Ejer12Color\Rel9Ejer12Color\obj\Debug\Rel9Ejer12Color.Properties.Resources.resources
+G:\git prog rel\Rel9Ejer12Color\Rel9Ejer12Color\obj\Debug\Rel9Ejer12Color.csproj.GenerateResource.Cache
+G:\git prog rel\Rel9Ejer12Color\Rel9Ejer12Color\obj\Debug\Rel9Ejer12Color.exe
+G:\git prog rel\Rel9Ejer12Color\Rel9Ejer12Color\obj\Debug\Rel9Ejer12Color.pdb

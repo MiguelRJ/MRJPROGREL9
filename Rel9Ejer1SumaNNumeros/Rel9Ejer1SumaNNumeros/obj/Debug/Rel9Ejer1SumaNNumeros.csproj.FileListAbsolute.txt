@@ -24,3 +24,16 @@ D:\git\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumer
 D:\git\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumeros.g.resources
 D:\git\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumeros.Properties.Resources.resources
 D:\git\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumeros.csproj.GenerateResource.Cache
+G:\git prog rel\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\bin\Debug\Rel9Ejer1SumaNNumeros.exe.config
+G:\git prog rel\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumeros.pdb
+G:\git prog rel\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\bin\Debug\Rel9Ejer1SumaNNumeros.exe
+G:\git prog rel\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\bin\Debug\Rel9Ejer1SumaNNumeros.pdb
+G:\git prog rel\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumeros.csprojResolveAssemblyReference.cache
+G:\git prog rel\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\MainWindow.baml
+G:\git prog rel\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\MainWindow.g.cs
+G:\git prog rel\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\App.g.cs
+G:\git prog rel\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumeros_MarkupCompile.cache
+G:\git prog rel\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumeros.g.resources
+G:\git prog rel\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumeros.Properties.Resources.resources
+G:\git prog rel\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumeros.csproj.GenerateResource.Cache
+G:\git prog rel\Rel9Ejer1SumaNNumeros\Rel9Ejer1SumaNNumeros\obj\Debug\Rel9Ejer1SumaNNumeros.exe
