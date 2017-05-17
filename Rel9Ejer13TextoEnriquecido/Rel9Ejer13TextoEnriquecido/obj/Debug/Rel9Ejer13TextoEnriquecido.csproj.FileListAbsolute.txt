@@ -1,0 +1,12 @@
+G:\git prog rel\Rel9Ejer13TextoEnriquecido\Rel9Ejer13TextoEnriquecido\bin\Debug\Rel9Ejer13TextoEnriquecido.exe.config
+G:\git prog rel\Rel9Ejer13TextoEnriquecido\Rel9Ejer13TextoEnriquecido\bin\Debug\Rel9Ejer13TextoEnriquecido.exe
+G:\git prog rel\Rel9Ejer13TextoEnriquecido\Rel9Ejer13TextoEnriquecido\bin\Debug\Rel9Ejer13TextoEnriquecido.pdb
+G:\git prog rel\Rel9Ejer13TextoEnriquecido\Rel9Ejer13TextoEnriquecido\obj\Debug\MainWindow.baml
+G:\git prog rel\Rel9Ejer13TextoEnriquecido\Rel9Ejer13TextoEnriquecido\obj\Debug\MainWindow.g.cs
+G:\git prog rel\Rel9Ejer13TextoEnriquecido\Rel9Ejer13TextoEnriquecido\obj\Debug\App.g.cs
+G:\git prog rel\Rel9Ejer13TextoEnriquecido\Rel9Ejer13TextoEnriquecido\obj\Debug\Rel9Ejer13TextoEnriquecido_MarkupCompile.cache
+G:\git prog rel\Rel9Ejer13TextoEnriquecido\Rel9Ejer13TextoEnriquecido\obj\Debug\Rel9Ejer13TextoEnriquecido.g.resources
+G:\git prog rel\Rel9Ejer13TextoEnriquecido\Rel9Ejer13TextoEnriquecido\obj\Debug\Rel9Ejer13TextoEnriquecido.Properties.Resources.resources
+G:\git prog rel\Rel9Ejer13TextoEnriquecido\Rel9Ejer13TextoEnriquecido\obj\Debug\Rel9Ejer13TextoEnriquecido.csproj.GenerateResource.Cache
+G:\git prog rel\Rel9Ejer13TextoEnriquecido\Rel9Ejer13TextoEnriquecido\obj\Debug\Rel9Ejer13TextoEnriquecido.exe
+G:\git prog rel\Rel9Ejer13TextoEnriquecido\Rel9Ejer13TextoEnriquecido\obj\Debug\Rel9Ejer13TextoEnriquecido.pdb

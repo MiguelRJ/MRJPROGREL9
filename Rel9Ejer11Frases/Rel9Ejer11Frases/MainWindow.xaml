@@ -1,0 +1,24 @@
+﻿<Window x:Class="Rel9Ejer11Frases.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Background="Beige">
+        <ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+        <Grid>
+        <TextBlock Text="1234567890" Style="{StaticResource txt}" Margin="205,71,0,0"/>
+        <TextBlock Text="Logré ver gol" Style="{StaticResource txt}" Margin="10,71,0,0"/>
+        <TextBlock Text="Añora la Roña" Style="{StaticResource txt}" Margin="185,113,0,0"/>
+        <TextBlock Text="Amor a Roma" Style="{StaticResource txt}" Margin="397,71,0,0"/>
+        <TextBlock Text="No Mara, sometamos o matemos a Ramón" Style="{StaticResource txt}" Margin="262,158,0,0"/>
+        <TextBlock Text="La ruta natural" Style="{StaticResource txt}" Margin="10,113,0,0"/>
+        <TextBlock Text="Se van sus naves" Style="{StaticResource txt}" Margin="10,158,0,0"/>
+        <TextBlock Text="Allí si María avisa y así va a ir a mi silla" Style="{StaticResource txt}" Margin="141,256,0,0"/>
+        <TextBlock Text="Dábale arroz a la zorra el abad" Style="{StaticResource txt}" Margin="346,219,0,0"/>
+        <TextBlock Text="Amo la pacífica paloma" Style="{StaticResource txt}" Margin="384,293,0,0"/>
+        <TextBlock Text="La ruta nos aportó otro paso natural" Style="{StaticResource txt}" Margin="10,293,0,0"/>
+        <TextBlock Text="Anita lava la tina" Style="{StaticResource txt}" Margin="11,200,0,0"/>
+        <Button Content="Configuracion" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        </Grid>
+        </ScrollViewer>
+    </Grid>
+</Window>

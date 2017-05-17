@@ -1,0 +1,59 @@
+﻿<Window x:Class="Rel9Ejer11Frases.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Configuracion" Height="400" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="95*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="226*"/>
+            <RowDefinition Height="40*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Tamaño de letras:" VerticalAlignment="Top" Height="16" Width="94"/>
+        <TextBox Name="txtTamano" HorizontalAlignment="Left" Height="23" Margin="109,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="93"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,42,0,0" TextWrapping="Wrap" Text="Tipo de letra" VerticalAlignment="Top" Height="16" Width="67"/>
+        <ListBox Margin="10,63,10,20"
+         Name="listFonts"
+         ItemsSource="{x:Static Fonts.SystemFontFamilies}"
+         FontSize="13">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" FontFamily="{Binding}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="132*"/>
+            </Grid.RowDefinitions>
+            <StackPanel x:Name="panel" Margin="5" Background="Black"/>
+
+            <Grid Grid.Row="1" ToolTip="{Binding Value, ElementName=sldAzul}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="450"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="Rojo" Foreground="Red" HorizontalAlignment="Right" Margin="0,30,402,34" Grid.Row="0" VerticalAlignment="Center" FontFamily="Arial Black" FontWeight="Bold" Height="24" Width="39" Grid.ColumnSpan="2"/>
+                <Slider x:Name="sldRojo"  Grid.Row="0" Margin="20" VerticalAlignment="Center" Width="300" Grid.Column="1" Height="20" Minimum="0" Maximum="255" ValueChanged="sld_ValueChanged" SmallChange="1" IsSnapToTickEnabled="True" ToolTip="{Binding Value, ElementName=sldRojo}"/>
+                <Label Content="Verde" Foreground="Green" HorizontalAlignment="Right" Margin="0,34,392,30" Grid.Row="1" VerticalAlignment="Center" FontFamily="Arial Black" FontWeight="Bold" Height="24" Width="48" Grid.ColumnSpan="2"/>
+                <Slider x:Name="sldVerde"  Grid.Row="1" Margin="20" VerticalAlignment="Center" Width="300" Grid.Column="1" Height="20" Minimum="0" Maximum="255" ValueChanged="sld_ValueChanged" SmallChange="1" IsSnapToTickEnabled="True" ToolTip="{Binding Value, ElementName=sldVerde}"/>
+                <Label Content="Azul" Foreground="Blue" HorizontalAlignment="Right" Margin="0,30,402,34" Grid.Row="2" VerticalAlignment="Center" FontFamily="Arial Black" FontWeight="Bold" Height="24" Width="38" Grid.ColumnSpan="2"/>
+                <Slider x:Name="sldAzul" Grid.Row="2" Margin="20" VerticalAlignment="Center" Width="300" Grid.Column="1" Height="20" Minimum="0" Maximum="255" ValueChanged="sld_ValueChanged" SmallChange="1" IsSnapToTickEnabled="True" ToolTip="{Binding Value, ElementName=sldAzul}"/>
+            </Grid>
+        </Grid>
+
+
+        <Button Name="btnAceptar" Content="Aceptar" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="75" Click="btnAceptar_Click" Grid.Column="1" Height="20" Grid.Row="1"/>
+        <Button Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="10,0,0,10"  VerticalAlignment="Bottom" Width="75" Click="btnCancelar_Click" Height="20" Grid.Row="1"/>
+
+    </Grid>
+</Window>

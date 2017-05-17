@@ -9,6 +9,7 @@ NO COPIAR
 
 8 - Hecho y revisado
 
+11 - Hecho, interfaz malisima
 12 - Hecho y revisado
 
 19 - Hecho, quitar el over predeterminado, y auto ajustar?
