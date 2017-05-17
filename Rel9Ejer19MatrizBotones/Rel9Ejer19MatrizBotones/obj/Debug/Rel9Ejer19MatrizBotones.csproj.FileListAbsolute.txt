@@ -1,0 +1,13 @@
+G:\git prog rel\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\bin\Debug\Rel9Ejer19MatrizBotones.exe.config
+G:\git prog rel\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\bin\Debug\Rel9Ejer19MatrizBotones.exe
+G:\git prog rel\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\bin\Debug\Rel9Ejer19MatrizBotones.pdb
+G:\git prog rel\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\obj\Debug\Rel9Ejer19MatrizBotones.csprojResolveAssemblyReference.cache
+G:\git prog rel\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\obj\Debug\MainWindow.baml
+G:\git prog rel\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\obj\Debug\MainWindow.g.cs
+G:\git prog rel\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\obj\Debug\App.g.cs
+G:\git prog rel\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\obj\Debug\Rel9Ejer19MatrizBotones_MarkupCompile.cache
+G:\git prog rel\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\obj\Debug\Rel9Ejer19MatrizBotones.g.resources
+G:\git prog rel\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\obj\Debug\Rel9Ejer19MatrizBotones.Properties.Resources.resources
+G:\git prog rel\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\obj\Debug\Rel9Ejer19MatrizBotones.csproj.GenerateResource.Cache
+G:\git prog rel\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\obj\Debug\Rel9Ejer19MatrizBotones.exe
+G:\git prog rel\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\obj\Debug\Rel9Ejer19MatrizBotones.pdb
