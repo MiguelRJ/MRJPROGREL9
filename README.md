@@ -11,6 +11,7 @@ NO COPIAR
 
 11 - Hecho, interfaz malisima
 12 - Hecho y revisado
+13 - Intento
 
 19 - Hecho, quitar el over predeterminado, y auto ajustar?
 
