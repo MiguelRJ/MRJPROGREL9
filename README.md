@@ -11,4 +11,6 @@ NO COPIAR
 
 12 - Hecho y revisado
 
+19 - Hecho, quitar el over predeterminado, y auto ajustar?
+
 27 - Hecho y revisado
