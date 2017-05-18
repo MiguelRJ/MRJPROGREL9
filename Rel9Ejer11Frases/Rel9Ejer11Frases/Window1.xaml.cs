@@ -36,7 +36,7 @@ namespace Rel9Ejer11Frases
             if (GuardarDatos())
             {
                 this.Close();
-                new MainWindow().Show();
+                //new MainWindow().Show();
             }
         }
 
@@ -48,8 +48,6 @@ namespace Rel9Ejer11Frases
             FontSizeConverter convertidor = new FontSizeConverter();
             FontFamilyConverter conFami = new FontFamilyConverter();
             
-            
-            
             try
             {
                 tamano = txtTamano.Text.ToString();
@@ -60,7 +58,7 @@ namespace Rel9Ejer11Frases
                 estiloNuevo.Setters.Add(Size);
                 estiloNuevo.Setters.Add(Family);
                 estiloNuevo.Setters.Add(color);
-                App.Current.Resources["txt"] = estiloNuevo;
+                App.Current.Resources["txtEnter"] = estiloNuevo;
                 return true;
             }
             catch (Exception e)

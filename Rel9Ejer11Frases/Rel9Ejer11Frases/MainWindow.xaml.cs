@@ -27,8 +27,20 @@ namespace Rel9Ejer11Frases
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             new Window1().ShowDialog();
+        }
+
+        private void TextBlock_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Style estilo = App.Current.FindResource("txtEnter") as Style;
+            ((TextBlock)sender).Style = estilo;
+        }
+
+        private void TextBlock_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Style estilo = App.Current.FindResource("txt") as Style;
+            ((TextBlock)sender).Style = estilo;
         }
     }
 }

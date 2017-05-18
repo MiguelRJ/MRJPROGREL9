@@ -9,7 +9,7 @@ NO COPIAR
 
 8 - Hecho y revisado
 
-11 - Hecho, interfaz malisima
+11 - Hecho y revisado
 12 - Hecho y revisado
 13 - Intento
 
