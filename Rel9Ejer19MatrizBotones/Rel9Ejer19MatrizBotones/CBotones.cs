@@ -40,6 +40,7 @@ namespace Rel9Ejer19MatrizBotones
                     tmpBoton.MouseEnter += mouseover;
                     tmpBoton.MouseLeave += mouserLeave;
                     tmpBoton.Click += mouseclick;
+                    tmpBoton.Template = Application.Current.FindResource("buttonTemplate") as ControlTemplate;
                     wrpPanel.Children.Add(tmpBoton);
                 }
             }

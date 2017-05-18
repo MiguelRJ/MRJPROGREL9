@@ -8,11 +8,12 @@ NO COPIAR
 5 - Hecho y revisado
 
 8 - Hecho y revisado
+7 - Hecho y revisado
 
 11 - Hecho y revisado
 12 - Hecho y revisado
 13 - Intento
 
-19 - Hecho, quitar el over predeterminado, y auto ajustar?
+19 - Hecho y revisado
 
 27 - Hecho y revisado

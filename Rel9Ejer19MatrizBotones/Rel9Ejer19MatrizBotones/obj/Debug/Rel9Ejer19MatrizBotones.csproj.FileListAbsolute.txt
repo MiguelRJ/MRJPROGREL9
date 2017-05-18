@@ -24,3 +24,4 @@ D:\git\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\obj\Debug\Rel9Ejer19Matri
 D:\git\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\obj\Debug\Rel9Ejer19MatrizBotones.Properties.Resources.resources
 D:\git\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\obj\Debug\Rel9Ejer19MatrizBotones.csproj.GenerateResource.Cache
 D:\git\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\obj\Debug\Rel9Ejer19MatrizBotones.exe
+D:\git\Rel9Ejer19MatrizBotones\Rel9Ejer19MatrizBotones\obj\Debug\App.baml
