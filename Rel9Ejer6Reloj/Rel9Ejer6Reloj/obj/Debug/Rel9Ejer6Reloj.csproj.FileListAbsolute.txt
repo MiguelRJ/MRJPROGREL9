@@ -1,0 +1,15 @@
+G:\git prog rel\Rel9Ejer6Reloj\Rel9Ejer6Reloj\bin\Debug\Rel9Ejer6Reloj.exe.config
+G:\git prog rel\Rel9Ejer6Reloj\Rel9Ejer6Reloj\bin\Debug\Rel9Ejer6Reloj.exe
+G:\git prog rel\Rel9Ejer6Reloj\Rel9Ejer6Reloj\bin\Debug\Rel9Ejer6Reloj.pdb
+G:\git prog rel\Rel9Ejer6Reloj\Rel9Ejer6Reloj\obj\Debug\MainWindow.baml
+G:\git prog rel\Rel9Ejer6Reloj\Rel9Ejer6Reloj\obj\Debug\MainWindow.g.cs
+G:\git prog rel\Rel9Ejer6Reloj\Rel9Ejer6Reloj\obj\Debug\App.g.cs
+G:\git prog rel\Rel9Ejer6Reloj\Rel9Ejer6Reloj\obj\Debug\Rel9Ejer6Reloj_MarkupCompile.cache
+G:\git prog rel\Rel9Ejer6Reloj\Rel9Ejer6Reloj\obj\Debug\Rel9Ejer6Reloj.g.resources
+G:\git prog rel\Rel9Ejer6Reloj\Rel9Ejer6Reloj\obj\Debug\Rel9Ejer6Reloj.Properties.Resources.resources
+G:\git prog rel\Rel9Ejer6Reloj\Rel9Ejer6Reloj\obj\Debug\Rel9Ejer6Reloj.csproj.GenerateResource.Cache
+G:\git prog rel\Rel9Ejer6Reloj\Rel9Ejer6Reloj\obj\Debug\Rel9Ejer6Reloj.exe
+G:\git prog rel\Rel9Ejer6Reloj\Rel9Ejer6Reloj\obj\Debug\Rel9Ejer6Reloj.pdb
+G:\git prog rel\Rel9Ejer6Reloj\Rel9Ejer6Reloj\obj\Debug\GeneratedInternalTypeHelper.g.cs
+G:\git prog rel\Rel9Ejer6Reloj\Rel9Ejer6Reloj\obj\Debug\Rel9Ejer6Reloj_MarkupCompile.lref
+G:\git prog rel\Rel9Ejer6Reloj\Rel9Ejer6Reloj\obj\Debug\Rel9Ejer6Reloj.csprojResolveAssemblyReference.cache

@@ -6,6 +6,7 @@ NO COPIAR
 3 - Hecho y revisado
 4 - Hecho y revisado
 5 - Hecho y revisado
+6 - Hecho, falta añadir calendario, solo activa y detiene el reloj
 
 8 - Hecho y revisado
 7 - Hecho y revisado
